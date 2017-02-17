@@ -13,4 +13,10 @@
 
 Route::get('/', function () {
     return view('welcome');
+
 });
+Route::get('/project','helloController@project'); 
+Route::get('/calc', function () {
+    return view('calc');
+});
+Route::post('/calc','helloController@add'); 
